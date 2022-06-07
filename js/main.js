@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequests);
 async function apiRequests(){
     const memberName = document.querySelector('input').value;
     try{
-        const res = await fetch(``)
+        const res = await fetch(`https://family-api-100devs.herokuapp.com/api/${memberName}`)
         const data = await res.json()
 
         console.log(data)
