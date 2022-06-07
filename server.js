@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = 8020;
 const cors = require('cors');
-const res = require('express/lib/response');
 
 app.use(cors())
 
@@ -91,7 +90,7 @@ app.get('/api/:name', (req,res)=>{
         console.log(familyNames[names])
         res.json(familyNames[names])
     }else{
-        res.json (familyNames.unknown)
+        res.json (familyNames[unknown])
     }
 })
 
