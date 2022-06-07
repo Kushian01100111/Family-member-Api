@@ -91,7 +91,7 @@ app.get('/api/:name', (req,res)=>{
         console.log(familyNames[names])
         res.json(familyNames[names])
     }else{
-        res.json (familyNames[unknown])
+        res.json (familyNames["unknown"])
     }
 })
 
